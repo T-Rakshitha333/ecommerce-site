@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>My Orders</h2>
+
+    {% if orders %}
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">Order ID</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Total Price</th>
+                    <th scope="col">Shipping Address</th>
+                    <th scope="col">Products</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for order in orders %}
+                    <tr>
+                        <td>{{ order.id }}</td>
+                        <td>{{ order.order_date.strftime('%Y-%m-%d') }}</td>
+                        <td>${{ order.total_price }}</td>
+                        <td>{{ order.shipping_address }}</td>
+                        <td>
+                            <ul>
+                                {% for product in order.products %}
+                                    <li>{{ product.name }} (Quantity: {{ product.quantity }})</li>
+                                {% endfor %}
+                            </ul>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>You haven't placed any orders yet. <a href="{{ url_for('home') }}">Continue shopping</a>.</p>
+    {% endif %}
+{% endblock %}
