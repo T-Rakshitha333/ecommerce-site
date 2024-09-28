@@ -1,0 +1,20 @@
+
+<img src="https://source.unsplash.com/400x300/?electronics" alt="Product Image">
+<img src="https://source.unsplash.com/400x300/?clothing" alt="Product Image">
+<img src="https://source.unsplash.com/400x300/?furniture" alt="Product Image">
+
+<!-- Placeholder.com URLs (Simple placeholder images with custom size) -->
+<img src="https://via.placeholder.com/400x300.png?text=Product+Image+1" alt="Product Image 1">
+<img src="https://via.placeholder.com/400x300.png?text=Product+Image+2" alt="Product Image 2">
+<img src="https://via.placeholder.com/400x300.png?text=Product+Image+3" alt="Product Image 3">
+
+<!-- Pexels URLs (Royalty-free images for a diverse range of categories) -->
+<img src="https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="Product Image">
+<img src="https://images.pexels.com/photos/275920/pexels-photo-275920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="Product Image">
+<img src="https://images.pexels.com/photos/919436/pexels-photo-919436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300&w=400" alt="Product Image">
+
+<img src="{{ url_for('static', filename='images/product1.jpg') }}" alt="Product Image 1">
+<img src="{{ url_for('static', filename='images/product2.jpg') }}" alt="Product Image 2">
+<img src="{{ url_for('static', filename='images/' + product.image) }}" alt="{{ product.name }}">
+<img src="https://via.placeholder.com/400x300.png?text=Order+Item" alt="Order Item">
+<img src="https://source.unsplash.com/400x300/?package" alt="Order Image">
