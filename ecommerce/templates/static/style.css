@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+h1, h2, h3, h4 {
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #6c757d;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #d3d3d3;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d3d3d3;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Cart Table */
+.table {
+    background-color: #fff;
+    margin-bottom: 30px;
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: #fff;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr td {
+    vertical-align: middle;
+}
+
+.table tbody tr td form {
+    display: inline-block;
+}
+
+.table .form-control {
+    width: 60px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.card-body h4, .card-body h5 {
+    color: #343a40;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    padding: 20px;
+    color: #fff;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 5px;
+}
+
+/* Orders Page */
+table tbody ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+table tbody ul li {
+    font-size: 14px;
+}
+
+/* Auth Pages (Login & Register) */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+}
+
+form p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Product List */
+.row .col-lg-4, .col-md-6 {
+    padding-bottom: 30px;
+}
+
+/* Utility Classes */
+.mt-2 {
+    margin-top: 10px;
+}
+
+.mt-4 {
+    margin-top: 20px;
+}
+
+.mb-4 {
+    margin-bottom: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
